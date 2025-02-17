@@ -176,7 +176,25 @@ class Player(Rolls_Dice):
         d12 = self.rod.d12 + self.line.d12
         super().__init__(d4,d6,d8,d10,d12,self.name)
 
+def fly_fishing_battle(player:Player,fish:Fish):
+        """
+    # Fly-Fishing Battle
+    Function for having a player attempt to catch a fish.
 
+    This is for fly-fishing, where the rules are different.
+
+    This function loops through comparing a Player's
+
+    Dice roll vs a fish's dice roll until a number
+
+    of successes or failures, determined by the fish,
+
+    are met.
+
+    Args:
+        player: the Player class player
+        fish: the Fish class fish
+    """
 def fishing_battle(player:Player,fish:Fish):
     """
     # Fishing Battle
